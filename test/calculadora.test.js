@@ -116,7 +116,7 @@ describe('Filtro', () => {
           }
         ])
       )
-      .toEqual({"cliente": {"dataInclusao": "2021-03-04", "estado": "SC", "nome": "Felipe"}, "codigo": 1, "dataFatura": "2021-11-08", "valor": 2000}
+      .toEqual([{"cliente": {"dataInclusao": "2021-03-04", "estado": "SC", "nome": "Felipe"}, "codigo": 1, "dataFatura": "2021-11-08", "valor": 2000}, {"cliente": {"dataInclusao": "2021-05-01", "estado": "SC", "nome": "Fernanda"}, "codigo": 3, "dataFatura": "2021-11-08", "valor": 5000}]
 
 
       )

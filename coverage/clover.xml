@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636695775869" clover="3.2.0">
-  <project timestamp="1636695775869" name="All files">
+<coverage generated="1636695874964" clover="3.2.0">
+  <project timestamp="1636695874965" name="All files">
     <metrics statements="18" coveredstatements="14" conditionals="17" coveredconditionals="10" methods="4" coveredmethods="2" elements="39" coveredelements="26" complexity="0" loc="18" ncloc="18" packages="1" files="2" classes="2"/>
     <file name="fatura.js" path="D:\Felipe\Tópicos da Computação\Atividade-1-main\lib\fatura.js">
       <metrics statements="9" coveredstatements="8" conditionals="12" coveredconditionals="10" methods="2" coveredmethods="1"/>
