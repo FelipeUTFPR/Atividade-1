@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/9</span>
+                <span class='fraction'>3/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>3/5</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/9</span>
+                <span class='fraction'>3/9</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,18 +82,18 @@
 <a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -103,19 +103,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">class Utils {
 &nbsp;
-  interData(data) {
-    const now = new Date(); // Data de hoje
-    const past = new Date(data); // Outra data no passado
-    const diff = Math.abs(now.getTime() - past.getTime()); // Subtrai uma data pela outra
-    const days = Math.ceil(diff / (1000 * 60 * 60 * 24)); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
-    return days;
+<span class="fstat-no" title="function not covered" >  in</span>terData(data) {
+    const now = <span class="cstat-no" title="statement not covered" >new Date();</span> // Data de hoje
+    const past = <span class="cstat-no" title="statement not covered" >new Date(data);</span> // Outra data no passado
+    const diff = <span class="cstat-no" title="statement not covered" >Math.abs(now.getTime() - past.getTime());</span> // Subtrai uma data pela outra
+    const days = <span class="cstat-no" title="statement not covered" >Math.ceil(diff / (1000 * 60 * 60 * 24));</span> // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
+<span class="cstat-no" title="statement not covered" >    return days;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  ve</span>rificaUF(UF) {
-<span class="cstat-no" title="statement not covered" >    if (</span>
-      UF === 'RS' || UF === 'SC' || UF === 'PR'
+  verificaUF(UF) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (
+      UF === 'RS' || UF === 'SC' || <span class="branch-2 cbranch-no" title="branch not covered" >UF === 'PR'</span>
     )
-<span class="cstat-no" title="statement not covered" >      return true</span>
+      return true
     else
 <span class="cstat-no" title="statement not covered" >      return false</span>
 &nbsp;
@@ -130,7 +130,7 @@ module.exports = Utils;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Nov 12 2021 02:44:34 GMT-0300 (GMT-03:00)
+                at Fri Nov 12 2021 02:55:00 GMT-0300 (GMT-03:00)
             </div>
         </div>
         <script src="prettify.js"></script>
