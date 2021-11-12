@@ -5,7 +5,7 @@ const f = new Fatura();
 describe('Filtro', () => {
   test('Para Valores de Faturas menores do que 2000', () => {
     expect(
-        f.filtro([{
+        f.filtroMenor2000([{
             codigo: 1,
             valor: 2000,
             dataFatura: '2021-11-08',
@@ -45,7 +45,7 @@ describe('Filtro', () => {
 
   test('Para Valores de Faturas entre 2000 e 2500 e dif datafat 30 dias', () => {
     expect(
-        f.filtro([{
+        f.filtroMaior2000menor2500([{
             codigo: 1,
             valor: 2000,
             dataFatura: '2021-11-08',
@@ -84,7 +84,7 @@ describe('Filtro', () => {
   })
   test('Para Valores de Faturas entre 2500 e 3000 e dif clientein 60 dias', () => {
     expect(
-        f.filtro([{
+        f.filtroMaior4000([{
             codigo: 1,
             valor: 2000,
             dataFatura: '2021-11-08',
