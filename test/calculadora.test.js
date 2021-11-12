@@ -1,4 +1,4 @@
-const Fatura = require("../lib/Fatura");
+const Fatura = require("../lib/fatura");
 
 const f = new Fatura();
 
